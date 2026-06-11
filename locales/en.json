@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "Georgia Tour — Premium Travel Agency",
+    "description": "Discover Georgia with professional guides. Premium tours across mountains, sea, wine regions and historic sites of the Caucasus.",
+    "keywords": "Georgia, tour, tourism, Caucasus, Tbilisi, Kazbegi, Kakheti, Svaneti, travel",
+    "ogTitle": "Georgia Tour — Unforgettable Journeys",
+    "ogDescription": "Travel through Georgia's most beautiful corners with professional guides."
+  },
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "tours": "Tours",
+    "about": "About Us",
+    "contact": "Contact",
+    "bookTour": "Book a Tour"
+  },
+  "hero": {
+    "badge": "Premium Tours",
+    "titleLine1": "Discover",
+    "titleLine2": "Georgia",
+    "description": "Travel through Georgia's most beautiful corners — mountains, sea, wine regions, historic monuments and unique adventures with professional guides.",
+    "ctaPrimary": "Book a Tour",
+    "ctaSecondary": "Explore Destinations",
+    "tagInteractive": "Personalized Experience",
+    "tagScroll": "Scroll to Explore",
+    "scrollHint": "Scroll down"
+  },
+  "destinations": {
+    "badge": "Destinations",
+    "titleLine1": "Popular",
+    "titleLine2": "Destinations",
+    "description": "Discover Georgia's most remarkable places — each with a unique history, culture and natural beauty that will leave you breathless.",
+    "exploreLabel": "Explore",
+    "items": [
+      { "id": "tbilisi",  "name": "Tbilisi",        "tagline": "Heart of the Caucasus" },
+      { "id": "kazbegi",  "name": "Kazbegi",        "tagline": "Kingdom of Mountains" },
+      { "id": "kakheti",  "name": "Kakheti",        "tagline": "Cradle of Wine" },
+      { "id": "svaneti",  "name": "Svaneti",        "tagline": "Adventurer's Paradise" },
+      { "id": "batumi",   "name": "Batumi",         "tagline": "Pearl of the Black Sea" },
+      { "id": "borjomi",  "name": "Borjomi",        "tagline": "City of Healing Waters" },
+      { "id": "martvili", "name": "Martvili Canyon","tagline": "Nature's Wonder" },
+      { "id": "gudauri",  "name": "Gudauri",        "tagline": "Premier Ski Resort" }
+    ]
+  },
+  "tours": {
+    "badge": "Tours",
+    "titleLine1": "Tours for",
+    "titleLine2": "Every Taste",
+    "description": "We offer a diverse range of tours — from individual preferences to corporate groups, each crafted for complete satisfaction.",
+    "durationLabel": "Duration",
+    "groupLabel": "Group",
+    "bookButton": "Book",
+    "items": [
+      {
+        "id": "individual",
+        "icon": "User",
+        "name": "Individual Tours",
+        "description": "Fully personalized itinerary tailored to your interests, pace and travel style.",
+        "duration": "2–14 days",
+        "groupSize": "1–4 people"
+      },
+      {
+        "id": "wine",
+        "icon": "Wine",
+        "name": "Wine Tours",
+        "description": "Kakheti wine culture, traditional winery visits and exclusive tasting experiences.",
+        "duration": "3–7 days",
+        "groupSize": "2–10 people"
+      },
+      {
+        "id": "mountain",
+        "icon": "Mountain",
+        "name": "Mountain Adventures",
+        "description": "Kazbegi, Svaneti, trekking on Caucasus peaks with experienced mountain guides.",
+        "duration": "5–12 days",
+        "groupSize": "4–15 people"
+      },
+      {
+        "id": "cultural",
+        "icon": "Landmark",
+        "name": "Cultural Tours",
+        "description": "Historic monuments, centuries-old churches, museums and authentic Georgian traditions.",
+        "duration": "4–10 days",
+        "groupSize": "2–20 people"
+      },
+      {
+        "id": "family",
+        "icon": "Users",
+        "name": "Family Tours",
+        "description": "Family-friendly routes — comfortable, safe and designed for all age groups.",
+        "duration": "5–10 days",
+        "groupSize": "2–8 people"
+      },
+      {
+        "id": "corporate",
+        "icon": "Briefcase",
+        "name": "Corporate Travel",
+        "description": "Team building activities, corporate conferences and exclusive group retreats.",
+        "duration": "2–7 days",
+        "groupSize": "10–50 people"
+      }
+    ]
+  },
+  "about": {
+    "badge": "About Us",
+    "titleLine1": "Why",
+    "titleLine2": "Choose Us?",
+    "description": "Our team creates safe, comfortable and unforgettable journeys across Georgia. Years of experience, licensed guides, and a personalized approach for every single guest.",
+    "stats": {
+      "years":  { "value": "10+", "label": "Years of Experience" },
+      "guests": { "value": "2K+", "label": "Happy Guests" },
+      "routes": { "value": "50+", "label": "Unique Routes" }
+    },
+    "features": [
+      {
+        "icon": "Star",
+        "title": "10+ Years of Experience",
+        "description": "Over a decade helping travelers discover their love for Georgia and the Caucasus."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Licensed Guides",
+        "description": "Our guides speak Georgian, English, Russian and other languages fluently."
+      },
+      {
+        "icon": "Clock",
+        "title": "24/7 Support",
+        "description": "Available at any time for any travel-related question or emergency."
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Personalized Approach",
+        "description": "Every tour is tailored to the specific wishes and expectations of each guest."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Booking",
+    "titleLine1": "Plan Your",
+    "titleLine2": "Journey",
+    "description": "Fill in the form and our team will contact you within 24 hours with a personalized offer.",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "e.g. John Smith",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 XXX XXX XXXX",
+      "tourType": "Tour Type",
+      "tourTypePlaceholder": "Select a tour",
+      "dates": "Preferred Dates",
+      "datesPlaceholder": "e.g. June 2025",
+      "groupSize": "Group Size",
+      "groupSizePlaceholder": "Number of people",
+      "message": "Additional Information",
+      "messagePlaceholder": "Tell us about your wishes and travel expectations...",
+      "submitButton": "Send Request",
+      "contactButton": "Contact Us",
+      "successTitle": "Thank you!",
+      "successMessage": "Your request has been received. Our team will contact you within 24 hours.",
+      "tourOptions": [
+        "Individual Tour",
+        "Wine Tour",
+        "Mountain Adventure",
+        "Cultural Tour",
+        "Family Tour",
+        "Corporate Tour"
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Unforgettable journeys begin here",
+    "companyTitle": "Company",
+    "servicesTitle": "Services",
+    "legalTitle": "Legal",
+    "companyLinks": [
+      { "label": "About Us",  "href": "#about" },
+      { "label": "Team",      "href": "#" },
+      { "label": "Careers",   "href": "#" },
+      { "label": "Press",     "href": "#" }
+    ],
+    "serviceLinks": [
+      { "label": "All Tours",     "href": "#tours" },
+      { "label": "Destinations",  "href": "#destinations" },
+      { "label": "Custom Tour",   "href": "#contact" },
+      { "label": "Corporate",     "href": "#contact" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy",    "href": "#" },
+      { "label": "Terms & Conditions","href": "#" },
+      { "label": "Cookie Policy",     "href": "#" }
+    ],
+    "address": "42 Rustaveli Ave, Tbilisi, Georgia",
+    "phone": "+995 32 2 XX XX XX",
+    "email": "info@georgiatour.ge",
+    "rights": "© 2025 Georgia Tour. All rights reserved.",
+    "madeWith": "Made with love for Georgia"
+  }
+}

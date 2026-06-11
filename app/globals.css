@@ -1,26 +1,122 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Custom CSS properties ───────────────────────────────────────────────── */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-primary:   #060606;
+  --color-bg-secondary: #080808;
+  --color-bg-tertiary:  #0e0e0e;
+  --color-amber:        #fbbf24;
+  --color-amber-dim:    rgba(251, 191, 36, 0.12);
+  --font-sans:          system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+                        Arial, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Base resets ─────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Reduced motion ──────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ─── Custom scrollbar ────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* ─── Focus ring global override ─────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid rgba(251, 191, 36, 0.5);
+  outline-offset: 2px;
+}
+
+/* ─── Selection ───────────────────────────────────────────────────────────── */
+
+::selection {
+  background-color: rgba(251, 191, 36, 0.25);
+  color: #fff;
+}
+
+/* ─── Utility: amber gradient text ───────────────────────────────────────── */
+
+.text-amber-gradient {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Section anchor offset (accounts for fixed navbar) ──────────────────── */
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ─── Globe animation (referenced by Globe component) ────────────────────── */
+
+@keyframes globe-rotate {
+  from { background-position: 0 center;      }
+  to   { background-position: 400px center;  }
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.1; transform: scale(1);   }
+  50%       { opacity: 1;   transform: scale(1.5); }
+}
+
+/* ─── Form select option (dark bg) ───────────────────────────────────────── */
+
+option {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+/* ─── Next.js image placeholder fade-in ──────────────────────────────────── */
+
+img[data-nimg] {
+  transition: opacity 0.3s ease;
 }
